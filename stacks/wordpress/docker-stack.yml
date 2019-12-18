@@ -31,4 +31,8 @@ services:
          - "traefik.http.services.echo.loadbalancer.server.port=80"
 
 volumes:
-    db_data:
+  db_data:
+
+networks:
+  public:
+    external: true
